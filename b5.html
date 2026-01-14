@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        margin: 50px;
+        background: #f2f2f2;
+        font-family: cursive;
+    }
+
+    .card {
+        width: 380px;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .card-header {
+        background: #37f5e5;
+        text-align: center;
+        padding: 20px;
+        position: relative;;
+    }
+
+    .card-header h2 {
+        font-size: 20=5px;
+        font-weight: bold;
+    }
+
+    .badge-hot {
+        position: absolute;
+        top: 1px;
+        right: 0px;
+        background: red;
+        color: white;
+        font-weight: bold;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .card-body {
+        padding: 25px;
+    }
+
+    .card-body p {
+        font-size: 18px;
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .highlight {
+        color: #00cc00;
+        font-weight: bold;
+    }
+
+    .price {
+        color: #00cc00;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .card-footer {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .card-footer input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 30px;
+        background: #00d9ff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+<body>
+     <div class="card">
+        <div class="card-header">
+            <h2>GÓI CHĂM SÓC RĂNG</h2>
+            <span class="badge-hot">HOT</span>
+        </div>
+
+        <div class="card-body">
+            <p>Dịch vụ: <span class="highlight">Tẩy trắng răng</span></p>
+            <p>Công nghệ: <span>Laser Whitening</span></p>
+            <p>Thời gian: <span class="highlight">60 phút</span></p>
+            <p>Bảo hành: <span class="highlight">6 tháng</span></p>
+            <p>Giá ưu đãi: <span class="price">1.600.000 đ</span></p>
+        </div>
+
+        <div class="card-footer">
+            <input type="submit" value="Đặt lịch ngay">
+        </div>
+
+    </div>
+</body>
+</html>
