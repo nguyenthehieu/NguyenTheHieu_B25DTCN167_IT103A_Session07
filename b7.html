@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 700px;
+        margin-left: 700px;
+        background-color: #f2f2f2;
+        color: #007054;
+        font-weight: bold;
+        border: black solid 1px;
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 460px;
+        margin: auto;
+        border-radius: 15px;
+    }
+    input, select, textarea {
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+        background-color: #00a37a;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <h1>Biểu Mẫu Feedback Phòng Khám Nha Khoa</h1>
+    <form action="">
+        <label for="name">Họ và tên</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Nhập họ tên" required>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        <br>
+        <label for="service">Dịch vụ đã sử dụng</label>
+        <br>
+        <select id="service" name="service" required>
+            <option value="">Khám răng tổng quát</option>
+            <option value="cleaning">Lấy cao răng</option>
+            <option value="filling">Trám răng</option>
+            <option value="whitening">Tẩy trắng răng</option>
+            <option value="extraction">Nhổ răng</option>
+        </select>
+        <br>
+        <label for="feedback">Mức độ hài lòng</label>
+        <br>
+        <select name="feedback" id="feedback">
+            <option value="very-satisfied">Rất hài lòng</option>
+            <option value="satisfied">Hài lòng</option>
+            <option value="neutral">Bình thường</option>
+            <option value="dissatisfied">Không hài lòng</option>
+            <option value="very-dissatisfied">Rất không hài lòng</option>
+        </select>
+        <br>
+        <label for="comments">Nội dung phản hồi</label>
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="20" placeholder="Hãy cho chúng tôi biết cảm nhận của bạn..."></textarea>
+        <br>
+        <input type="submit" value="Gửi feedback">
+    </form>
+</body>
+</html>
