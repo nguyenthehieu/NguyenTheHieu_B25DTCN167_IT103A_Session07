@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Khám Nha Khoa</title>
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====== LAYOUT CHUNG ====== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ====== HERO ====== */
+.hero {
+    background: linear-gradient(to right, #0a192f, #55699f, #3b82f6);
+    color: white;
+    padding: 60px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.hero p {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+/* ====== BUTTON ====== */
+.btn-group {
+    margin-bottom: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+    background-color: #2d65ba;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #3b82f6;
+}
+
+/* ====== STATS ====== */
+.stats-container {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    min-width: 140px;
+    text-align: center;
+}
+
+/* ====== SERVICES ====== */
+.services {
+    padding: 60px 0;
+}
+
+.services h2 {
+    margin-bottom: 10px;
+}
+
+.services p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* ====== SERVICE CARD ====== */
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    position: relative;
+    border: 1px solid rgba(185, 185, 185, 0.6);
+    width: 800px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 10px;
+}
+
+.service-card ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.service-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2563eb;
+    
+}
+
+/* ====== HOT TAG ====== */
+.hot-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+</style>
+<body>
+    <section class="hero">
+    <div class="container">
+        <span class="badge">Phòng khám nha khoa uy tín</span>
+        <h1>Nụ cười khỏe – Tự tin tỏa sáng</h1>
+        <p>Nha Khoa Smile cung cấp dịch vụ nha khoa tổng quát, thẩm mỹ...</p>
+        
+        <div class="btn-group">
+            <button class="btn-primary">Đặt lịch khám</button>
+            <button class="btn-secondary">Xem dịch vụ</button>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box"><strong>10+</strong><br>Năm kinh nghiệm</div>
+            <div class="stat-box"><strong>5.000+</strong><br>Khách hàng</div>
+            <div class="stat-box"><strong>4.9/5</strong><br>Đánh giá</div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2>Dịch vụ nổi bật</h2>
+        <p>Giải pháp tối ưu cho sức khỏe răng miệng...</p>
+        
+        <div class="service-card">
+            <span class="hot-tag">HOT</span>
+            <h3>Cạo vôi – Đánh bóng</h3>
+            <p>Làm sạch mảng bám, hạn chế viêm nướu...</p>
+            <ul>
+                <li>Quy trình nhẹ nhàng</li>
+                <li>Thời gian: 30-45 phút</li>
+                <li>Tư vấn chăm sóc tại nhà</li>
+            </ul>
+            <a href="#">Xem giá</a>
+        </div>
+    </div>
+</section>
+</body>
+</html>
